@@ -8,22 +8,33 @@ const Header = () => {
     const { address } = useAccount() //this is how you get user connected address
     // use mounted for showing things only after mounted is true. prevents hydration error.
     return (
-        <div className="w-full">
-            <div className="max-w-screen-lg mx-auto justify-center w-full h-auto border-b-4 border-slate-400">
-                <div className="grid md:grid-cols-4 gap-6">
-                    <div className="text-2xl font-mono font-bold text-gray-700 mt-3">SolventSwap</div>
-                    <Link href={"/"}>
-                        <p className="m-4 py-3 text-lg font-bold font-mono text-center text-gray-700 bg-slate-400 rounded-lg cursor-pointer">
-                            Swaps
-                        </p>
+        <div className="w-full py-6">
+            <div className="flex items-center justify-between max-w-screen-lg mx-auto">
+                <div className="flex items-center">
+                    <a href="/">
+                        <div
+                            className="text-4xl font-bold "
+                            style={{
+                                backgroundImage: "linear-gradient(to right, #8de4af, #00c1de)",
+                                WebkitBackgroundClip: "text",
+                                WebkitTextFillColor: "transparent",
+                            }}
+                        >
+                            SolventSwap
+                        </div>
+                    </a>
+                </div>
+                <div className="flex items-center justify-center">
+                    <Link href={"/"} passHref>
+                        <div className="mx-12 text-lg font-medium text-cyan-400 hover:text-gray-300">Swaps</div>
                     </Link>
-                    <Link href={"/pools"}>
-                        <p className=" m-4 py-3 text-lg font-bold font-mono text-center text-gray-700 bg-slate-400 rounded-lg cursor-pointer">
-                            Pools
-                        </p>
+                    <Link href={"/pools"} passHref>
+                        <div className="mx-12 text-lg font-medium text-cyan-400 hover:text-gray-300">Pools</div>
                     </Link>
-
-                    <div className="m-4">
+                </div>
+                <div className="flex items-center">
+                    <div className="flex flex-grow"></div>
+                    <div className="flex items-center ">
                         <ConnectButton />
                     </div>
                 </div>
