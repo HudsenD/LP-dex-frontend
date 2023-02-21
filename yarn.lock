@@ -649,7 +649,7 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
-"@rainbow-me/rainbowkit@^0.8.8":
+"@rainbow-me/rainbowkit@^0.11.0":
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/@rainbow-me/rainbowkit/-/rainbowkit-0.11.0.tgz#a479ecb636423ed76e971ff272addc2a710f86a6"
   integrity sha512-bGtmHI8S1yf4+1KOQaNpk5AamFm6hz4yRG9aOvYVliV5687OtlUj4VCx0YdYJgm7hgZdt/Gj4UHHTY3pOhSpgw==
